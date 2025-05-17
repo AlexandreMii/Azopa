@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azopa Chat</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="theme-toggle">
+    <label>
+      🌞 <input type="checkbox" id="darkmode" /> 🌙
+    </label>
+  </div>
+
+  <div class="container">
+    <h1>💬 Azopa - Ton IA personnelle</h1>
+    <div id="chatlog" class="chatlog"></div>
+
+    <div class="typing" id="typing" style="display: none;">
+      <span>Azopa est en train d'écrire...</span>
+    </div>
+
+    <form id="chatform">
+      <select id="mode">
+        <option value="">🎯 Mode par défaut</option>
+        <option value="sage">🧠 Mode Sage</option>
+        <option value="dynamique">🚀 Dynamique</option>
+        <option value="social">🎭 Social</option>
+      </select>
+      <input type="text" id="message" placeholder="Pose ta question..." required />
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
